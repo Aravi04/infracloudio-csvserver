@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  csvserver:
+    ports:
+      - "9393:9393"
+    environment:
+      CSVSERVER_BORDER : Orange
+    image: "infracloudio/csvserver:latest"
+  prometheus:
+    ports:
+      - "9000:9000"
+    image: "prom/prometheus:v2.22.0"
+   
+   
